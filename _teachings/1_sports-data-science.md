@@ -7,6 +7,7 @@ course_id: data-science-sports-analytics
 
 ## Course Overview
 
+
 This interdisciplinary independent study course, developed in collaboration with Santa Clara University Athletics, gives students hands-on experience applying data science and machine learning to real-world sports analytics problems.
 
 Students work with biometric and performance datasets to investigate questions related to athletic performance, recovery, and injury prevention. The course emphasizes practical problem solving, data-driven analysis, and translating computational results into meaningful insights.
