@@ -1,81 +1,79 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Network Science & Social Influence
+description: Models and algorithms for understanding influence, diffusion, community effects, and intervention in complex networks.
+img: /assets/img/projects/network_science_thumbnail.png
 importance: 1
-category: work
-related_publications: true
+category: research
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This research area studies how information, behaviors, and influence propagate through social and networked systems. The work spans higher-order influence models, group and community-aware diffusion, and intervention strategies such as rumor blocking and protective diffusion. Across these directions, the goal is to develop principled models and scalable algorithms for understanding and optimizing network processes.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Key themes include:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+- Influence maximization
+- Information diffusion
+- Higher-order and hypergraph influence
+- Group and community structure
+- Rumor propagation and blocking
+- Network intervention and protection
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Representative Directions
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+### 1. Higher-Order Influence in Social Networks
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid
+      path="assets/img/projects/network_hyperedge.png"
+      title="Higher-order influence in hypergraphs"
+      caption="Figure 1. An example of a hyperedge capturing higher-order influence."
+      class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
 
-{% endraw %}
+Many diffusion processes cannot be adequately modeled using only pairwise edges. In higher-order settings, multiple source nodes may jointly influence a target node, motivating hypergraph-based models of social influence. This line of work studies influence maximization in hypergraphs, where diffusion depends on richer interaction structure than standard graph models.
+
+**Citation.** Zhu, Jianming, Junlei Zhu, Smita Ghosh, Weili Wu, and Jing Yuan. "Social influence maximization in hypergraph in social networks." *IEEE Transactions on Network Science and Engineering* 6, no. 4 (2018): 801-811.
+
+---
+
+### 2. Group Influence and Community Structure
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.liquid
+      path="assets/img/projects/network_community_diffusion.png"
+      title="Group influence and community structure"
+      caption="Figure 2. Example of an information diffusion process across groups or communities."
+      class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+Influence often unfolds within and across groups, communities, or social units rather than in an undifferentiated network. This work examines group influence maximization, where the objective is to understand or optimize diffusion while accounting for community structure and collective behavior. Such models help capture the role of mesoscale organization in shaping diffusion outcomes.
+
+**Citation.** Zhu, Jianming, Smita Ghosh, and Weili Wu. "Group influence maximization problem in social networks." *IEEE Transactions on Computational Social Systems* 6, no. 6 (2019): 1156-1164.
+
+---
+
+### 3. Rumor Blocking and Protective Intervention
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.liquid
+      path="assets/img/projects/network_rumor_blocking.png"
+      title="Rumor blocking and protective diffusion"
+      caption="Figure 3. Example of rumor spreading and protective intervention over time."
+      class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+In addition to maximizing beneficial diffusion, an important challenge is limiting harmful or misleading information. This direction studies rumor blocking under uncertainty, where the aim is to identify intervention strategies that reduce rumor spread even when rumor sources are not fully known in advance. These models capture the interaction between adverse diffusion and protective actions in uncertain network environments.
+
+**Citation.** Zhu, Jianming, Smita Ghosh, and Weili Wu. "Robust rumor blocking problem with uncertain rumor sources." *World Wide Web* 24, no. 1 (2021): 229-247.
+
+## Summary
+
+Together, these projects illustrate a broad view of network science and social influence: influence may arise through higher-order interactions, spread through community structure, and require robust intervention in the presence of harmful diffusion. This research develops algorithmic and modeling tools for analyzing and optimizing these processes in complex networks.

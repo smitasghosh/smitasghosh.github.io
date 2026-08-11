@@ -1,81 +1,47 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://www.wikipedia.org/
+title: Evolutionary & Higher-Order Network Dynamics
+description: Models and learning-based methods for evolutionary diffusion, fixation processes, competitive and reversible dynamics in complex networks, with an emphasis on long-horizon decision making.
+img: /assets/img/projects/evolutionary_network_dynamics_thumbnail.png
 importance: 3
-category: work
+category: research
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This research area studies network processes that go beyond standard irreversible diffusion models. A central focus is on **evolutionary dynamics**, where competing states spread stochastically over a network and the long-term outcome depends on both graph structure and node-dependent fitness. More broadly, this area is concerned with network models in which interaction dynamics are richer, more competitive, and more structurally nuanced than classical pairwise influence propagation.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Key themes include:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+- Evolutionary diffusion on networks
+- Fixation maximization
+- Competitive and reversible propagation
+- Position-dependent fitness
+- Active node selection
+- Higher-order network dynamics
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Representative Direction
+
+### 1. Evolutionary Diffusion and Fixation Maximization
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.liquid
+      path="assets/img/projects/evolutionary_network_dynamics_thumbnail.png"
+      title="Positional Moran process dynamics with active nodes"
+      caption="Figure 1. Positional Moran process dynamics with active nodes and mutant reproduction."
+      class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
 
-{% endraw %}
+This work studies **fixation maximization** under the **positional Moran process**, a competitive diffusion model in which propagation is stochastic, reversible, and influenced by node position and fitness. In contrast to classical influence maximization, the objective here is not simply to trigger large diffusion, but to select an initial active set that maximizes the probability of eventual population-wide dominance.
+
+The figure illustrates the dynamics of the process. On the left, selected active nodes are highlighted, and the mutant node reproduces with an advantage determined by the fitness term \(1 + \delta\). Red arrows indicate mutant-driven reproduction or spread from the currently active configuration. On the right, the process transitions to the next state, where blue arrows indicate the subsequent reproduction and replacement dynamics. The figure emphasizes that evolutionary diffusion is **competitive and state-dependent**: the next configuration depends not only on network connectivity, but also on which nodes are active, how fitness is distributed, and how reproduction propagates through the graph over time.
+
+This setting motivates the development of scalable learning-based policies for active node selection. The accepted paper introduces **LEAP**, a deep reinforcement learning framework that formulates active node selection as a Markov decision process and learns fixation-aware representations that capture graph structure together with invasion and stability signals. The goal is to achieve high-quality fixation strategies without relying on repeated simulation-intensive greedy search.
+
+**Status.** Accepted paper; formal citation to be added once bibliographic details are available.
+
+## Summary
+
+This project illustrates a broader shift from static diffusion models toward **evolutionary and competitive network dynamics**. By combining graph structure, stochastic competition, and learning-based optimization, this line of research seeks scalable methods for reasoning about long-horizon dominance and intervention in evolving networked systems.
