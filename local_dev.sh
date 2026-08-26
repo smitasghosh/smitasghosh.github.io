@@ -1,4 +1,4 @@
 docker compose pull
 docker compose up
 
-# open http://localhost:8080
+# open http://localhost:8080 in browse
