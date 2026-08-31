@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-08-12'
+  last_updated: '2026-08-31'
 papers:
   Qzs7CcUAAAAJ:0EnyYjriUFMC:
     citations: 1
     title: Cross-domain data fusion for disaster detection
     year: '2017'
   Qzs7CcUAAAAJ:2osOgNQ5qMEC:
-    citations: 74
+    citations: 75
     title: Group influence maximization problem in social networks
     year: '2019'
   Qzs7CcUAAAAJ:3fE2CSJIrl8C:
@@ -14,7 +14,7 @@ papers:
     title: Detecting Fake News Spreaders on Twitter Through Follower Networks
     year: '2021'
   Qzs7CcUAAAAJ:4DMP91E08xMC:
-    citations: 2
+    citations: 3
     title: Efficient algorithm for stochastic rumor blocking problem in social networks during safety accident period
     year: '2025'
   Qzs7CcUAAAAJ:4TOpqqG69KYC:
@@ -38,7 +38,7 @@ papers:
     title: 'Maximizing prediction accuracy in wildfire severity: A comprehensive analysis of machine learning models using environmental features'
     year: '2023'
   Qzs7CcUAAAAJ:L8Ckcad2t8MC:
-    citations: 49
+    citations: 53
     title: "\u201CShaping ChatGPT into my Digital Therapist\u201D: A thematic analysis of social media discourse on using generative artificial intelligence for mental health"
     year: '2025'
   Qzs7CcUAAAAJ:LkGwnXOMwfcC:
@@ -98,17 +98,21 @@ papers:
     title: "Finding User\u2019s\u2019 Happiness Factor\u2019by Analyzing Posts on Social Media for Mental Health Support"
     year: Unknown Year
   Qzs7CcUAAAAJ:_kc_bZDykSQC:
-    citations: 4
+    citations: 5
     title: Depression detection using machine and deep learning models to assess mental health of social media users
     year: '2022'
   Qzs7CcUAAAAJ:aqlVkmm33-oC:
-    citations: 16
+    citations: 17
     title: Enhanced group influence maximization in social networks using deep reinforcement learning
     year: '2024'
   Qzs7CcUAAAAJ:dhFuZR0502QC:
     citations: 0
     title: Generating and Attacking Passwords with Misspellings by Leveraging Homophones
     year: '2025'
+  Qzs7CcUAAAAJ:hC7cP41nSMkC:
+    citations: 0
+    title: A Data-Driven Strategy for Online Hate Speech Spreader Identification Using Modified Pagerank
+    year: '2023'
   Qzs7CcUAAAAJ:hqOjcs7Dif8C:
     citations: 5
     title: An English to Urdu educational video translation pipeline to reinforce mother-tongue based learning
@@ -138,7 +142,7 @@ papers:
     title: ICDCS 2019
     year: Unknown Year
   Qzs7CcUAAAAJ:u5HHmVD_uO8C:
-    citations: 176
+    citations: 178
     title: Social influence maximization in hypergraph in social networks
     year: '2018'
   Qzs7CcUAAAAJ:ufrVoPGSRksC:
