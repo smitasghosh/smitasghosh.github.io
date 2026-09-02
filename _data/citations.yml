@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-31'
+  last_updated: '2026-09-02'
 papers:
   Qzs7CcUAAAAJ:0EnyYjriUFMC:
     citations: 1
@@ -90,7 +90,7 @@ papers:
     title: Robust rumor blocking problem with uncertain rumor sources in social networks
     year: '2021'
   Qzs7CcUAAAAJ:ZeXyd9-uunAC:
-    citations: 1
+    citations: 2
     title: 'RELINK: Edge activation for closed network influence maximization via deep reinforcement learning'
     year: '2025'
   Qzs7CcUAAAAJ:_FxGoFyzp5QC:
